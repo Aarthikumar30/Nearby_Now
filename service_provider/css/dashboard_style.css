@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --main-color:#08a11c;
+    --black:#222;
+    --white:#FFF;
+    --light-black:#777;
+    --light-white:#FFF9;
+    --dark-bg:rgba(0,0,0,.7);
+    --light-bg:#EEE;
+    --border:.1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --text-shadow:0 1.5rem 3rem rgba(0,0,0,.3);
+}
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html{
+    font-size: 65%; /* Increased from 62.5% to 70% */
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: var(--white);
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
+
+body {
+    font-size: 1.6rem; /* Increased from 1.6rem to 1.8rem */
+    font-family: Arial, sans-serif;
+    background-color: var(--light-bg);
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.dashboard {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: var(--main-color);
+    color: var(--white);
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    display: block;
+    color: var(--white);
+    padding: 10px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: var(--light-black);
+}
+
+.content {
+    margin-left: 270px;
+    padding: 20px;
+    background-color: var(--light-bg);
+}
+
+.head {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 20px;
+}
+
+.head h2 {
+    margin: 0;
+    color: var(--black);
+}
+
+.head p {
+    color: var(--light-black);
+}
+
+.head a{
+    display: block;
+    padding-top: 5px;
+    color: var(--main-color);
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.about, .register {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 20px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+}
+
+.about {
+    flex: 1;
+}
+
+.about .image img {
+    max-width: 100%;
+    width: 280px;  /*Reduced the width */
+    height: 75vh;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.about .about-content {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.about h3, .register h3 {
+    margin-top: 0;
+    color: var(--black);
+    font-size: 1.8rem;
+}
+
+.about p, .register p {
+    color: var(--light-black);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: var(--white);
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--white);
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+}
+
+
+
+/* User */
+
+
+#header{
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    padding: 5px;
+    width: 100px;
+    margin-left: 20px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+    padding-right: 5px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #04AA6D;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Admin */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 250px;
+}
+
+.footer-section h2, .footer-section h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-section p {
+    color: #ccc;
+}
+
+.footer-section .contact span {
+    display: block;
+    margin: 10px 0;
+    color: #ccc;
+    text-transform: lowercase;
+}
+
+.footer-section .socials a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.footer-section .socials a:hover {
+    color: #ddd;
+}
+
+.footer-section .links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section .links ul a {
+    color: #ccc;
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+}
+
+.footer-section .links ul a:hover {
+    color: #fff;
+}
+
+.footer-section .contact-form .text-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-section .contact-form .btn {
+    background-color: #ff5a5f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-section .contact-form .btn:hover {
+    background-color: #ff787b;
+}
+
+.footer-bottom {
+    background-color: #222;
+    color: #ccc;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .content {
+        margin-left: 220px;
+    }
+
+    .about .image img {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sidebar {
+        width: 150px;
+    }
+
+    .content {
+        margin-left: 170px;
+    }
+
+    .about .image img {
+        width: 150px;
+    }
+} 
+ 
+
+
+
